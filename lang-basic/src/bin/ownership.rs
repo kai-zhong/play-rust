@@ -1,15 +1,24 @@
 fn main() {
-    let mut s = String::from("hello");
 
-    let s1 = &s;
-    let s2 = &s;
-    println!("{}, {}, {}", s1, s2, s);
+    let s = Test{
+        v: 32
+    };
 
-    let mut s3 = &s;
 
-    println!("{}, {}, {}", s1, s2, s3);
+    let v = s.unwrap();
 
-    println!("char is {}.", s.chars().nth(3).unwrap());
-    s.clear();
+    println!("s is {}", s.v);
+    println!("v is {}", v);
 
+}
+
+#[derive(Copy, Clone)]
+struct Test {
+    v: i32
+}
+
+impl Test {
+    fn unwrap(self) -> i32 {
+        self.v
+    }
 }
