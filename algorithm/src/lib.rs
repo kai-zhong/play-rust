@@ -201,7 +201,7 @@ pub mod search {
                     } else {
 
                         match (curr.left.take(), curr.right.take()) {
-                            (None, None) => root.take(),
+                            (None, None) => None,
                             (Some(child), None) => root.replace(child),
                             (None, Some(child)) => root.replace(child),
                             (Some(l), Some(r)) => {
