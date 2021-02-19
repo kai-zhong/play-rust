@@ -4,4 +4,4 @@ play-rust是一个学习Rust编程语言的自主学习项目。该项目将学�
 # 目录
 - [lang](lang)， 练习Rust的基本语法、语言特性和标准库功能的使用。
 - [algorithm](algorithm)， 练习实现各种数据结构与算法。
-
+- [spider](spider)，练习实现通用爬虫程序。
